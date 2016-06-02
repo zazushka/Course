@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{681DB991-6E2F-420C-9641-168E0BB32CF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Course</RootNamespace>
+    <AssemblyName>Course</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="View\AddCoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddCoin.Designer.cs">
+      <DependentUpon>AddCoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddCollectioner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddCollectioner.Designer.cs">
+      <DependentUpon>AddCollectioner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Coin.cs" />
+    <Compile Include="View\CoinAddIntoCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CoinAddIntoCollection.Designer.cs">
+      <DependentUpon>CoinAddIntoCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Collectioner.cs" />
+    <Compile Include="View\Collectioners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Collectioners.Designer.cs">
+      <DependentUpon>Collectioners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CollectionersCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CollectionersCollection.Designer.cs">
+      <DependentUpon>CollectionersCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Handbook.cs" />
+    <Compile Include="View\MyCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MyCollection.Designer.cs">
+      <DependentUpon>MyCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\AddCoin.resx">
+      <DependentUpon>AddCoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddCollectioner.resx">
+      <DependentUpon>AddCollectioner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CoinAddIntoCollection.resx">
+      <DependentUpon>CoinAddIntoCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Collectioners.resx">
+      <DependentUpon>Collectioners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CollectionersCollection.resx">
+      <DependentUpon>CollectionersCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
